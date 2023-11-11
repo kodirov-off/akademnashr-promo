@@ -5,57 +5,66 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akademnashr</title>
+  <link rel="stylesheet" href="stlye/style.css">
 
 </head>
 <body>
 
   
   <!-- SITE HEADER -->
-  <header>
+  <header class="site-header"> 
     <a href="index.html">
       <img src="images/logo.svg" alt="Akadem nashr logo" width="227" height="60" >
     </a>
-    <nav>
-      <ul>
-        <li><a href="#">Bosh sahifa</a></li>
-        <li><a href="#">Kitoblar </a></li>
-        <li><a href="#">Aksiyalar</a></li>
-        <li><a href="#">Kontaklar</a> </li>
+    <nav class="sitenav">
+      <ul class="sitenav-list">
+        <li><a class="sitenav-link" href="#">Bosh sahifa</a></li>
+        <li><a class="sitenav-link" href="#">Kitoblar </a></li>
+        <li><a class="sitenav-link" href="#">Aksiyalar</a></li>
+        <li><a class="sitenav-link" href="#">Kontaklar</a> </li>
       </ul>
     </nav>
-    <a href="#">Ro'yhatdan o'tish</a>
+    <a href="#" class="main-link">Ro'yhatdan o'tish</a>
   </header>
   <main>
     
-    <div>
+    <div class="hero">
       <!-- HERO -->
-      <div>
-        <h2>Python dasturlash asoslari</h2>
-        <p>Dasturlash asoslariga oid o‘zbek tilidagi ilk eng mukammal qo‘llanma. Kitobning har bir bo‘limi uchun maxsus video darslar yozilgan bo‘lib, ularga kitobda ko‘rsatilgan QR kod orqali o‘tish mumkin.</p>
-        <a href="#">Buyurtma berish</a>
+      <div class="hero-content">
+        <hr class="orange-line">
+        <h2 class="hero-heading">Python dasturlash asoslari</h2>
+        <p class="hero-text">Dasturlash asoslariga oid o‘zbek tilidagi ilk eng mukammal qo‘llanma. Kitobning har bir bo‘limi uchun maxsus video darslar yozilgan bo‘lib, ularga kitobda ko‘rsatilgan QR kod orqali o‘tish mumkin.</p>
+        <a href="#" class="main-link">Buyurtma berish</a>
       </div>
-     <img src="images/python-book.jpg" alt="Python book rasmi " srcset="images/python-book.jpg 1x, images/python-book@2x.jpg 2x" width="510" height="510">
+     <img src="images/python-book.jpg" alt="Python book rasmi " srcset="images/python-book.jpg 1x, images/python-book@2x.jpg 2x" width="510" height="510" class="hero-img">
     </div>
     
     <!-- Features -->
     <div>
-      <h2>Nega aynan
+      <hr class="orange-line">
+      <h2 class="features-heading">Nega aynan
         Akademnashr?</h2>
         <ul>
-          <li>
-            <img src="images/Icon.svg" alt="" width="56" header="56">
-            <h3>Oson buyurtma qilish</h3>
-            <p>Akademnashr.uz saytidan o’zingizga yoqqan kitobni sodda usulda buyurtma qila olasiz.</p>
+          <li class="feature">
+            <div class="feature-icon-wrapper">
+              <img src="images/Icon.svg" alt="" width="56" header="56">
+            </div>
+            <h3 class="feature-title">Oson buyurtma qilish</h3>
+            <p class="feature-info">Akademnashr.uz saytidan o’zingizga yoqqan kitobni sodda usulda buyurtma qila olasiz.</p>
           </li>
-          <li>
-           <img src="images/Icon-1.svg" alt="" width="56" height="56">
-            <h3>Eng sara kitoblar</h3>
-            <p>Trenddagi eng ommabop, turli auditoriyalarga mo’ljallangan har xil janrdagi kitoblarni topa olasiz.</p>
+          <li class="feature">
+           <div class="feature-icon-wrapper">
+            <img src="images/Icon-1.svg" alt="" width="56" height="56">
+          </div>
+            <h3 class="feature-title">Eng sara kitoblar</h3>
+            <p class="feature-info">Trenddagi eng ommabop, turli auditoriyalarga mo’ljallangan har xil janrdagi kitoblarni topa olasiz.</p>
           </li>
-          <li>
-            <img src="images/lightning-bolt.svg" alt="" width="56" height="56">
-            <h3>Tez yetkazib berish</h3>
-            <p>O’zbekistonning ixtiyoriy hududiga 3 ish kuni ichida, xalqaro buyurtmalarni 10 ish kuni ichida yetkazib beriladi.</p>
+          <li class="feature">
+            <div class="feature-icon-wrapper">
+              <img src="images/lightning-bolt.svg" alt="" width="56" height="56">
+            </div>
+            <h3 class="feature-title">Tez yetkazib berish</h3>
+            <p class="feature-info">O’zbekistonning ixtiyoriy hududiga 3 ish kuni ichida, xalqaro buyurtmalarni 10 ish kuni ichida yetkazib beriladi.</p>
           </li>
         </ul>
       </div>
