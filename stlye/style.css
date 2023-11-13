@@ -1,9 +1,29 @@
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+
+
+body{
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Roboto", "Arial", sans-serif;
+  letter-spacing: 0.5px;
+}
 .site-header{
   background-color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header-right{
+  display: flex;
+  align-items: center;
 }
 
 .sitenav-list{
   list-style: none;
+  display: flex;
 }
 
 .sitenav-link{
@@ -27,6 +47,9 @@
 
 .hero{
   background-color: #252420;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: #fff;
 }
 
@@ -49,6 +72,7 @@
   font-size: 40;
   line-height: 1.2;
   letter-spacing: 0.5;
+  font-family: 'Roboto Condensed', "Roboto", "Arial", sans-serif;
 }
 
 .hero-text{
@@ -62,8 +86,15 @@ letter-spacing: 0.5px;
   font-size: 72px;
   line-height: 1.2;
   letter-spacing: 0.5;
+  font-family: 'Roboto Condensed', "Roboto", "Arial", sans-serif;
 }
 
+
+.feature-list{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
 .feature-icon-wrapper{
   width: 100px;
   height: 100px;
@@ -78,6 +109,7 @@ letter-spacing: 0.5px;
   font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0.5;
+  font-family: 'Roboto Condensed', "Roboto", "Arial", sans-serif;
 }
 
 .feature-info{
@@ -87,6 +119,9 @@ letter-spacing: 0.5px;
 }
 
 .promo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #252420;
   color: #fff;
 }
@@ -119,9 +154,16 @@ letter-spacing: 0.5px;
   background-color: #f8f8f8;
 
 }
+.site-footer-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .site-footer ul{
   list-style: none;
+  display: flex;
+  align-items:center;
 }
 
 .site-footer-divider{
@@ -129,8 +171,15 @@ letter-spacing: 0.5px;
   height: 2px;
 }
 
+
+.site-footer-bottom{
+display: flex;
+
+}
+
 .site-footer-links{
   width: 224px;
+  line-height: 19px;
 }
 
 .site-footer-links a{
