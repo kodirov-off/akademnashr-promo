@@ -162,8 +162,10 @@ letter-spacing: 0.5px;
 
 .site-footer ul{
   list-style: none;
+}
+
+.socials{
   display: flex;
-  align-items:center;
 }
 
 .site-footer-divider{
@@ -171,14 +173,13 @@ letter-spacing: 0.5px;
   height: 2px;
 }
 
-
-.site-footer-bottom{
-display: flex;
-}
-
 .site-footer-links{
   width: 224px;
   line-height: 19px;
+}
+
+.site-footer-bottom{
+  display: flex;
 }
 
 .site-footer-links a{
