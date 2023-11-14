@@ -5,21 +5,36 @@ font-family: 'Roboto Condensed', sans-serif; */
 *:focus{
   outline: 3px dotted #ff7500;
   outline-offset: 3px;
+  box-sizing: border-box;
 }
 body{
   font-size: 16px;
+  padding: 0;
+  margin: 0;
   line-height: 1.5;
   font-family: "Roboto", "Arial", sans-serif;
   letter-spacing: 0.5px;
 }
+
+.container{
+  width: 100%;
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .site-header{
   background-color: #FFF;
-  display: flex;
   border-top: 5px solid #ff7500;
   padding-top: 16px;
   padding-bottom: 16px;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .site-header-right{
@@ -101,12 +116,15 @@ body{
   opacity: 0.6;
 }
 
-.hero{
-  background-color: #252420;
-  display: flex;
-  padding: 80px 0;
+
+.hero-container{
+ display: flex; 
   align-items: center;
   justify-content: space-between;
+}
+.hero{
+  background-color: #252420;
+  padding: 80px 0;
   color: #fff;
 }
 
@@ -117,6 +135,7 @@ body{
   width: 510px;
   height: 510px;
   border-radius: 8px;
+  box-shadow: 24px 24px 0 0 rgba(255, 117, 0, 0.6);
 }
 
 .orange-line{
@@ -172,6 +191,7 @@ letter-spacing: 0.5px;
   align-items: center;
   width: 100px;
   height: 100px;
+  margin-bottom: 32px;
   background-color: rgba(255, 117, 0, 0.2)
 }
 
@@ -185,6 +205,8 @@ letter-spacing: 0.5px;
 
 .feature-title{
   font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 12px;
   line-height: 1.2;
   letter-spacing: 0.5;
   font-family: 'Roboto Condensed', "Roboto", "Arial", sans-serif;
@@ -192,19 +214,23 @@ letter-spacing: 0.5px;
 
 .feature-info{
   font-size: 16px;
+  margin: 0;
   line-height: 1.5;
   letter-spacing: 0.5;
 }
-
 .promo{
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+
+.promo-inner{
+  color: #fff;
+ border-radius: 12px;
+ padding: 64px;
+ background-color: #252420;
   display: flex;
-  /* padding-top: 120px;
-  padding-bottom: 160px; */
-  border-radius: 12px;
   justify-content: space-between;
   align-items: center;
-  background-color: #252420;
-  color: #fff;
 }
 
 .promo-content{
@@ -241,7 +267,7 @@ letter-spacing: 0.5px;
 .promo-img{
   width: 440px;
   height: 440px;
-  border: radius 12px;
+  border-radius: 12px;
   object-fit: cover;
 }
 
@@ -304,6 +330,14 @@ letter-spacing: 0.5px;
   padding: 0;
   list-style: none;
   margin-right: 68px;
+}
+
+.site-footer-links li{
+  margin-bottom: 16px;
+}
+
+.site-footer-links li:last-child{
+  margin-bottom: 16px;
 }
 
 .site-footer-links:last-child{
