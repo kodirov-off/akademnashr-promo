@@ -15,6 +15,9 @@ body{
 .site-header{
   background-color: #FFF;
   display: flex;
+  border-top: 5px solid #ff7500;
+  padding-top: 16px;
+  padding-bottom: 16px;
   justify-content: space-between;
   align-items: center;
 }
@@ -38,6 +41,7 @@ body{
 
 .sitenav-list{
   list-style: none;
+  padding: 0;
   display: flex;
 }
 
@@ -62,6 +66,10 @@ body{
 }
 
 .main-link{
+  display: inline-block;
+  border-radius: 4px;
+  font-weight: bold;
+  padding: 12px 24px;
   color: #FFF;
  font-size: 13px;
  line-height: 15px;
@@ -81,6 +89,7 @@ body{
 .hero{
   background-color: #252420;
   display: flex;
+  padding: 80px 0;
   align-items: center;
   justify-content: space-between;
   color: #fff;
@@ -92,11 +101,13 @@ body{
 .hero-img {
   width: 510px;
   height: 510px;
+  border-radius: 8px;
 }
 
 .orange-line{
   width: 80px;
   height: 3px;
+  border: 0px;
   background-color: #ff7500;
 }
 
@@ -114,6 +125,11 @@ line-height: 1.5;
 letter-spacing: 0.5px;
 }
 
+.features{
+ 
+  padding-top: 210px;
+  padding-bottom: 210px;
+}
 .features-heading{
   width: 440px;
   font-size: 72px;
@@ -125,10 +141,15 @@ letter-spacing: 0.5px;
 
 .feature-list{
   display: flex;
+  padding: 0;
   list-style: none;
   justify-content: space-between;
 }
 .feature-icon-wrapper{
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
   width: 100px;
   height: 100px;
   background-color: rgba(255, 117, 0, 0.2)
@@ -153,6 +174,9 @@ letter-spacing: 0.5px;
 
 .promo{
   display: flex;
+  /* padding-top: 120px;
+  padding-bottom: 160px; */
+  border-radius: 12px;
   justify-content: space-between;
   align-items: center;
   background-color: #252420;
@@ -180,12 +204,14 @@ letter-spacing: 0.5px;
 .promo-img{
   width: 440px;
   height: 440px;
+  border: radius 12px;
   object-fit: cover;
 }
 
 .site-footer{
   background-color: #f8f8f8;
-
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 .site-footer-top{
   display: flex;
@@ -199,6 +225,7 @@ letter-spacing: 0.5px;
 
 .socials{
   display: flex;
+  padding: 0;
 }
 .socials a{
   color: #252420;
@@ -215,11 +242,13 @@ letter-spacing: 0.5px;
 .site-footer-divider{
   background-color: rgba(37, 36, 32, 0.5);
   height: 2px;
+  border: 0px;
 }
 
 .site-footer-links{
   width: 224px;
   line-height: 19px;
+  padding: 0;
 }
 
 .site-footer-bottom{
